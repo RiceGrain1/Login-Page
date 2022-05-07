@@ -2,22 +2,17 @@ html {
     background-color: #28292a;
 }
 
-* {
-    border: 3px solid cyan;
-}
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 800px;
-    border: 3px solid green;
     margin: 40px;
 }
 
 .item {
     height: 550px;
     width: 350px;
-    border: 3px solid red;
     background-color: white;
     border-radius: 20px;
 }
@@ -64,4 +59,23 @@ html {
 
 button:hover {
     cursor: pointer;    
+}
+
+.btn {
+    background-color: red;
+    border-radius: 25px;
+    color: white;
+    /** The margin property below is making the button small, remove to make large again*/
+    margin: auto;
+}
+
+.text-small {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.login-box-sizes {
+    height: 20px;
+    margin: 4px;
 }
