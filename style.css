@@ -35,7 +35,8 @@ html {
 }
 
 .column {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column
 }
 
 .login-text {
@@ -45,7 +46,22 @@ html {
 }
 
 #username {
-    height: 150px;
-    width: 100px;
     font-family: 'Coiny', cursive;
+    font-size: larger;
+}
+
+#password {
+    font-family: 'Coiny', cursive;
+    font-size: larger;
+}
+
+.usr-login {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button:hover {
+    cursor: pointer;    
 }
