@@ -1,0 +1,51 @@
+html {
+    background-color: #28292a;
+}
+
+* {
+    border: 3px solid cyan;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 800px;
+    border: 3px solid green;
+    margin: 40px;
+}
+
+.item {
+    height: 550px;
+    width: 350px;
+    border: 3px solid red;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.img {
+    border-radius: 50%;
+    width: 170px;
+    height: auto;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.login-text {
+    margin: 1px;
+    font-size: 30px;
+    font-family: 'Coiny', cursive;
+}
+
+#username {
+    height: 150px;
+    width: 100px;
+    font-family: 'Coiny', cursive;
+}
