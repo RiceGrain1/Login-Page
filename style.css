@@ -2,6 +2,10 @@ html {
     background-color: #28292a;
 }
 
+/**body {
+    background-image: url(/images/background.jpg);
+}*/
+
 .container {
     display: flex;
     align-items: center;
@@ -78,4 +82,31 @@ button:hover {
 .login-box-sizes {
     height: 20px;
     margin: 4px;
+}
+
+.footer {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+list-style-type: none;
+flex-grow: .3;
+}
+
+.mgn li {
+    margin: 10px;
+    text-decoration-line: none;
+}
+
+.ft-cont {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color:  red;
 }
