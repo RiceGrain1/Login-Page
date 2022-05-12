@@ -11,17 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 </head>
 <body>
+<nav class="nav-ctn">
+    <a class="nav-links" href="">Home</a> 
+    <a class="nav-links" href="">Profile</a>
+    <a class="nav-links" href="">Settings</a>
+    <a class="nav-links" href="">Info</a>
+</nav>
+
     <div class="container">
-        <div class="item">
+        <div class="item border">
             <!-- Currently has palceholder image, real image needs to be 170x170, image will be rounded due to CSS-->
             <div class="center column"><img class="img" src="images/icon-profile.png">
                 <h2 class="login-text">Login Below</h2>
             </div>           
             <form id="loginboxes" class="usr-login">
                 <label id="username" for="user">Username:</label>
-                <input type="text" id="user" name="Username" class="login-box-sizes">
+                <input type="text" id="user" name="Username" placeholder="Username" class="login-box-sizes rounded-input">
                 <label id="password" for="pass">Password:</label>
-                <input type="password" id="pass" name="Password" class="login-box-sizes">
+                <input type="password" id="pass" name="Password" placeholder="Password" class="login-box-sizes rounded-input">
+                <div class="labels-ctn">
+                    <label>
+                        <input type="checkbox" id="remember-me"> Remember me
+                    </label>
+                    <label id="forgotpassword"><a href="">Forgot Password?</a></label>
+                </div>
                 <button type="submit" class="btn text-small">Sign In</button>
             </form>
         </div>
@@ -36,5 +49,6 @@
     </ul>
 
     </div>
+    <p class="center">© Lorem Ipsum 2022</p>
 </body>
 </html>

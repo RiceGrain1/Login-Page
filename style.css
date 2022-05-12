@@ -1,112 +1,165 @@
 html {
-    background-color: #28292a;
+  background-color: #28292a;
 }
 
-/**body {
-    background-image: url(/images/background.jpg);
-}*/
+body {
+  /*background-image: url(/images/background.jpg);*/
+  margin: 0px;
+}
+
+a {
+  color: inherit;
+}
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 800px;
-    margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 800px;
+  margin: 40px;
 }
 
 .item {
-    height: 550px;
-    width: 350px;
-    background-color: white;
-    border-radius: 20px;
+  height: 550px;
+  width: 350px;
+  background-color: white;
+  border-radius: 10%;
 }
 
 .img {
-    border-radius: 50%;
-    width: 170px;
-    height: auto;
+  border-radius: 50%;
+  width: 170px;
+  height: auto;
 }
 
 .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .column {
-    display: flex;
-    flex-direction: column
+  display: flex;
+  flex-direction: column;
 }
 
 .login-text {
-    margin: 1px;
-    font-size: 30px;
-    font-family: 'Coiny', cursive;
+  margin: 1px;
+  font-size: 30px;
+  font-family: "Coiny", cursive;
 }
 
 #username {
-    font-family: 'Coiny', cursive;
-    font-size: larger;
+  font-family: "Coiny", cursive;
+  font-size: larger;
 }
 
 #password {
-    font-family: 'Coiny', cursive;
-    font-size: larger;
+  font-family: "Coiny", cursive;
+  font-size: larger;
 }
 
 .usr-login {
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rounded-input {
+  padding: 5px;
+  border-radius: 15px;
 }
 
 button:hover {
-    cursor: pointer;    
+  cursor: pointer;
 }
 
 .btn {
-    background-color: red;
-    border-radius: 25px;
-    color: white;
-    /** The margin property below is making the button small, remove to make large again*/
-    margin: auto;
+  background-color: red;
+  border-radius: 25px;
+  color: white;
+  /** The margin property below is making the button small, remove to make large again*/
+  margin: auto;
+}
+
+.btn:hover {
+  background-color: darkred;
+  transition: 100ms;
 }
 
 .text-small {
-    font-size: 25px;
-    font-weight: bold;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-
 .login-box-sizes {
-    height: 20px;
-    margin: 4px;
+  height: 30px;
+  margin: 4px;
 }
 
 .footer {
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-list-style-type: none;
-flex-grow: .3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  flex-grow: 0.3;
 }
 
 .mgn li {
-    margin: 10px;
-    text-decoration-line: none;
+  margin: 10px;
+  text-decoration-line: none;
 }
 
 .ft-cont {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-a:hover {
-    color:  red;
+.nav-links:hover {
+  color: red;
+  background-color: #2169fc;
+}
+
+.border {
+  padding: 20px;
+  border-top: 5px solid #2169fc;
+  border-bottom: 5px solid #5b2974;
+  background-image: linear-gradient(#2169fc, #5b2974),
+    linear-gradient(#2169fc, #5b2974);
+  background-size: 5px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+
+.nav-links {
+  display: block;
+}
+
+.nav-ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 20px;
+  background-color: white;
+}
+
+#forgotpassword {
+  color: gray;
+}
+
+#forgotpassword:hover {
+  text-decoration: underline;
+}
+
+.labels-ctn {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-content: center;
 }
