@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hover.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<nav class="nav-ctn">
-    <a class="nav-links" href="">Home</a> 
-    <a class="nav-links" href="">Profile</a>
-    <a class="nav-links" href="">Settings</a>
-    <a class="nav-links" href="">Info</a>
-</nav>
+    <nav class="nav-ctn">
+        <a class="nav-links hvr-grow" href="">Home</a>
+        <a class="nav-links hvr-grow" href="">Profile</a>
+        <a class="nav-links hvr-grow" href="">Settings</a>
+        <a class="nav-links hvr-grow" href="">Info</a>
+
+
+    </nav>
 
     <div class="container">
         <div class="item border">
             <!-- Currently has palceholder image, real image needs to be 170x170, image will be rounded due to CSS-->
             <div class="center column"><img class="img" src="images/icon-profile.png">
                 <h2 class="login-text">Login Below</h2>
-            </div>           
+            </div>
             <form id="loginboxes" class="usr-login">
                 <label id="username" for="user">Username:</label>
-                <input type="text" id="user" name="Username" placeholder="Username" class="login-box-sizes rounded-input">
+                <input type="text" id="user" name="Username" placeholder="Username"
+                    class="login-box-sizes rounded-input hvr-shadow ">
                 <label id="password" for="pass">Password:</label>
-                <input type="password" id="pass" name="Password" placeholder="Password" class="login-box-sizes rounded-input">
+                <input type="password" id="pass" name="Password" placeholder="Password"
+                    class="login-box-sizes rounded-input hvr-shadow ">
                 <div class="labels-ctn">
                     <label>
-                        <input type="checkbox" id="remember-me"> Remember me
+                        <input type="checkbox" class="checkbox"><span class="remember-me">Remember me</span>
                     </label>
                     <label id="forgotpassword"><a href="">Forgot Password?</a></label>
                 </div>
                 <button type="submit" class="btn text-small">Sign In</button>
             </form>
         </div>
-        
-    </div>
-<div class="ft-cont">
-    <ul class="footer">
-        <li class="mgn"><a href="https://discord.com/" target="_blank"><img src="/images/icons/discord.png" alt="Discord"></a></li>
-        <li class="mgn"><a href="https://www.instagram.com/"target="_blank"><img src="/images/icons/instagram.png" alt="instagram"></a></li>
-        <li class="mgn"><a href="https://www.youtube.com/"target="_blank"><img src="/images/icons/youtube.png" alt="youtube"></a></li>
-        <li class="mgn"><a href="https://twitter.com/"target="_blank"><img src="/images/icons/twitter.png" alt="Twitter"></a></li>
-    </ul>
 
     </div>
-    <p class="center">© Lorem Ipsum 2022</p>
+    <div class="ft-cont">
+        <ul class="footer">
+            <li class="mgn hvr-shrink"><a href="https://discord.com/" target="_blank"><img
+                        src="/images/icons/discord.png" alt="Discord"></a></li>
+            <li class="mgn hvr-shrink"><a href="https://www.instagram.com/" target="_blank"><img
+                        src="/images/icons/instagram.png" alt="instagram"></a></li>
+            <li class="mgn hvr-shrink"><a href="https://www.youtube.com/" target="_blank"><img
+                        src="/images/icons/youtube.png" alt="youtube"></a></li>
+            <li class="mgn hvr-shrink"><a href="https://twitter.com/" target="_blank"><img
+                        src="/images/icons/twitter.png" alt="Twitter"></a></li>
+        </ul>
+
+    </div>
 </body>
+
 </html>

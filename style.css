@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  /*background-image: url(/images/background.jpg);*/
+  background: linear-gradient(180deg, #ff0055 0%, #000066 100%);
   margin: 0px;
 }
 
@@ -121,11 +121,6 @@ a:link {
   text-decoration: none;
 }
 
-.nav-links:hover {
-  color: red;
-  background-color: #2169fc;
-}
-
 .border {
   padding: 20px;
   border-top: 5px solid #2169fc;
@@ -139,18 +134,36 @@ a:link {
 
 .nav-links {
   display: block;
+  color: white;
+  font-size: 25px;
+  font-family: "Coiny", cursive;
+}
+
+.nav-links:hover {
+  color: red;
+  transition: 100ms;
 }
 
 .nav-ctn {
   display: flex;
+  position: relative;
   flex-direction: row;
-  justify-content: space-around;
-  height: 20px;
-  background-color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 35px;
+  background-color: #2169fc;
 }
 
 #forgotpassword {
   color: gray;
+  font-family: "Koulen", cursive;
+  font-size: medium;
+}
+
+.remember-me {
+  color: gray;
+  font-family: "Koulen", cursive;
+  font-size: medium;
 }
 
 #forgotpassword:hover {
@@ -162,4 +175,16 @@ a:link {
   height: 40px;
   justify-content: space-between;
   align-content: center;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #eee;
+}
+
+.no-outline:focus {
+  outline: none;
 }
